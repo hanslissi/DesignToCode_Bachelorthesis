@@ -1,0 +1,83 @@
+\documentclass[11pt, english, twoside]{article}
+\usepackage[style=authoryear, autocite=inline, maxcitenames=3, maxbibnames=3, uniquename=false, backend=biber]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+
+% Customize Inline Citation Format
+\renewcommand*{\finalnamedelim}{/} % Change "and" to "/"
+\renewcommand*{\multinamedelim}{/} % Change ", " to "/"
+
+% Define Custom Citation Commands
+\newcommand{\vglcite}[2][]{(vgl. \cite[#1]{#2})}
+\newcommand{\directcite}[2][]{(\cite[#1]{#2})}
+
+% Customize Name Formatting in Bibliography
+\DeclareNameAlias{author}{family-given} % Ensure "Last, First" format
+
+% Remove ISBN, pages and series
+\AtEveryBibitem{
+  \clearfield{isbn}
+  \clearfield{pagetotal}
+  \clearfield{series}
+}
+
+% Customize Bibliography Author Format
+\renewbibmacro*{author}{%
+  \printnames{author}: 
+}
+
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{location}:
+  \iflistundef{publisher}
+    {}
+    {\setunit*{\addspace}\printlist{publisher}}%
+  \setunit*{\addspace}%
+  \printfield{year}
+}
+
+% Load Bibliography
+\addbibresource{citations.bib}
+\graphicspath{{images}}
+
+% Customize Page Style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE, LO]{\leftmark}
+\fancyfoot[RE, RO]{Page \thepage}
+\onehalfspacing
+
+
+\begin{document}
+Hello World!
+
+% \begin{figure}[h!]
+% \begin{center}
+%     \includegraphics[width=300pt, height=\textheight,keepaspectratio]{test.jpg}
+%     \caption[Caption (url)]{Caption visible}
+% \end{center}
+% \end{figure}
+
+% =============== CHAPTERS ===============
+\include{chapters/1_introduction}
+
+\include{chapters/2/0_Basics of Webdesign and Development}
+
+\include{chapters/2/1_User Interface Design}
+
+\include{chapters/2/2_Component Based Design}
+
+\include{chapters/2/3_Design Systems}
+% =============== CHAPTERS ===============
+
+
+
+% =============== REFERENCES ===============
+\newpage
+\printbibliography
+
+\newpage
+\listoffigures
+% =============== REFERENCES ===============
+\end{document}
