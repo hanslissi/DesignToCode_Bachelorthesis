@@ -14,28 +14,28 @@
 \newcommand{\directcite}[2][]{(\cite[#1]{#2})}
 
 % Customize Name Formatting in Bibliography
-\DeclareNameAlias{author}{family-given} % Ensure "Last, First" format
+% \DeclareNameAlias{author}{family-given} % Ensure "Last, First" format
 
-% Remove ISBN, pages and series
-\AtEveryBibitem{
-  \clearfield{isbn}
-  \clearfield{pagetotal}
-  \clearfield{series}
-}
+% % Remove ISBN, pages and series
+% \AtEveryBibitem{
+%   \clearfield{isbn}
+%   \clearfield{pagetotal}
+%   \clearfield{series}
+% }
 
-% Customize Bibliography Author Format
-\renewbibmacro*{author}{%
-  \printnames{author}: 
-}
+% % Customize Bibliography Author Format
+% \renewbibmacro*{author}{%
+%   \printnames{author}: 
+% }
 
-\renewbibmacro*{publisher+location+date}{%
-  \printlist{location}:
-  \iflistundef{publisher}
-    {}
-    {\setunit*{\addspace}\printlist{publisher}}%
-  \setunit*{\addspace}%
-  \printfield{year}
-}
+% \renewbibmacro*{publisher+location+date}{%
+%   \printlist{location}:
+%   \iflistundef{publisher}
+%     {}
+%     {\setunit*{\addspace}\printlist{publisher}}%
+%   \setunit*{\addspace}%
+%   \printfield{year}
+% }
 
 % Load Bibliography
 \addbibresource{citations.bib}
@@ -62,7 +62,7 @@ Hello World!
 % =============== CHAPTERS ===============
 \include{chapters/1_introduction}
 
-\include{chapters/2/0_Basics of Webdesign and Development}
+\include{chapters/2/0_Basics of Webdesign}
 
 \include{chapters/2/1_User Interface Design}
 
