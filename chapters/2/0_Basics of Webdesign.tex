@@ -1,78 +1,116 @@
 \section{Basics of Webdesign}
-Optimizing the workflow from User Interface Design to code implementation requires to have a solid foundational understanding of what UI Design and development is.
-More specifically, understanding web-specific aspects of these fields is crucial to optimize the workflow for web projects.
-In this chapter, we will discuss the basics of User Interface Design, 
-    
-    \subsection{User Interface Design}
-    The interaction design foundation defines User Interface (UI) Design as 
-    "the process designers use to build interfaces in software or computerized devices, 
-    focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. 
-    UI design refers to graphical user interfaces and other forms—e.g., voice-controlled interfaces." \directcite{interactiondesignfoundation-ixdfWhatUserInterface2025}.
-    
-    I believe this definition is a good starting point to understand what UI design is about, because it shows that it's about more than just the visual.
-    User interfaces are everywhere, be it the ATM, the stove, the bike computer or the time tracking app in the browser. 
-    Each one of them needs to be carefully designed. It's about finding ways to make this human-computer interaction as smooth, efficient and delightful as possible.
-    \vglcite{interactiondesignfoundation-ixdfWhatUserInterface2025}
+Optimizing the workflow from User Interface Design to code implementation requires to have a solid
+foundational understanding of what UI Design and development is. More specifically, understanding
+web-specific aspects of these fields is crucial to optimize the workflow for web projects. In this
+chapter, we will discuss the basics of User Interface Design,
 
-    
+\subsection{User Interface Design}
+The interaction design foundation defines User Interface (UI) Design as "the process designers use
+to build interfaces in software or computerized devices, focusing on looks or style. Designers aim
+to create interfaces which users find easy to use and pleasurable. UI design refers to graphical
+user interfaces and other forms—e.g., voice-controlled interfaces."
+\directcite{interactiondesignfoundation-ixdfWhatUserInterface2016}.
 
-        \subsubsection{User Experience and Usability}
-        To grasp the concept of User Experience, or UX for short, we need to zoom out of the context of User Interfaces.
-        UX is about looking at all kinds of touchpoints a user has with a product or service and seeing the holistic experience.
-        This of course includes the UI, but also other domains such as content quality, customer support, branding, and more. \vglcite{normanDefinitionUserExperience1998}
+I believe this definition is a good starting point to understand what UI design is about, because it
+shows that it's about more than just the visual. User interfaces are everywhere, be it the ATM, the
+stove, the bike computer or the time tracking app in the browser. Each one of them needs to be
+carefully designed. It's about finding ways to make this human-computer interaction as smooth,
+efficient and delightful as possible.
+\vglcite{interactiondesignfoundation-ixdfWhatUserInterface2016}
 
-        In other words, even an app like Spotify with a great UI, would have a poor UX if there were only 10 songs available.
-        
-        Usability on the other hand is, as Jacob Nielsen suggests, a quality attribute of Interfaces. 
-        This attribute indicates how easy it is for users to use a product, by observing and measuring 
-        the five quality components: learnability, efficiency, memorability, errors, and satisfaction % NOTE: Do I need to explain these further?
-        defined by Nielsen. \vglcite{nielsenUsability101Introduction2012}
 
-        \subsubsection{Web Design}
 
-        \subsubsection{Tools}
-        There are many great tools out there that aim to make UI Design easier and more efficient. Some of them also have features that 
-        help to bridge the gap between design and code. I selected the mentioned tools based on their popularity, since I aim to provide a solution that tailors to the majority of designers and developers.
+\subsubsection{User Experience and Usability}
+To grasp the concept of User Experience, or UX for short, we need to zoom out of the context of User
+Interfaces. UX is about looking at all kinds of touchpoints a user has with a product or service and
+seeing the holistic experience. This of course includes the UI, but also other domains such as
+content quality, customer support, branding, and more. \vglcite{normanDefinitionUserExperience1998}
 
-        (https://uxdesign.cc/figma-continues-to-skyrocket-63-reported-it-was-their-primary-ui-design-tool-in-2021-bb9390a8b96b)
+In other words, even an app like Spotify with a great UI, would have a poor UX if there were only 10
+songs available.
 
-        Figma:
-        Figma is by far the most popular UI Design tool at the moment. It's a cloud-based design tool that focuses on real-time collaboration, prototyping and design system creation.
-        The majority of features is free to use, which makes it very approachable. Apart from their frequent updates and improvements, Figma has a lively community allowing for the creation of plugins, templates and other resources.
-        Having robust design system features like components, style definitions and variables, Figma is one of the leading tools in the UI Design space. 
-        (https://help.figma.com/hc/en-us/categories/360002042553)
+Usability on the other hand is, as Jacob Nielsen suggests, a quality attribute of Interfaces. This
+attribute indicates how easy it is for users to use a product, by observing and measuring the five
+quality components: learnability, efficiency, memorability, errors, and satisfaction
+% NOTE: Do I need to explain these further?
+defined by Nielsen. \vglcite{nielsenUsability101Introduction2012}
 
-        Sketch:
-        Sketch is a design tool that was first released in 2010. Although, Figma has surpassed Sketch in popularity, it still has a large user base.
-        It offers similar features to Figma like real-time collaboration, components or prototyping. However, aside from the free, browser-accessible file viewer, Sketch is a paid tool available only on macOS.
-        The program has a strong focus on creating design systems and has a large library of plugins and templates.
-        (https://www.sketch.com/)
+\subsubsection{Web Design}
 
-        Adobe Illustrator and Adobe Photoshop:
-        Although the vector graphics editor Adobe Illustrator and the raster graphics editor Adobe Photoshop are not specifically tailored to UI Design, they are widely used by designers.
-        Many designers report that they use them as secondary tools aiding in the creation of more complex graphics.
-        (https://uxtools.co/survey/2023/ui-design/)
+\subsubsection{Tools}
+There are many great tools out there that aim to make UI Design easier and more efficient. Some of
+them also have features that help to bridge the gap between design and code. I selected the
+mentioned tools based on their popularity, since I aim to provide a solution that tailors to the
+majority of designers and developers.
 
-        In future chapters, I will generally refer to Figma, since it is the most popular tool at the moment and also the one I am most familiar with. Although the majority of concepts and techniques mentioned will be applicable to other tools as well.
+(https://uxdesign.cc/figma-continues-to-skyrocket-63-reported-it-was-their-primary-ui-design-tool-in-2021-bb9390a8b96b)
 
-    \subsection{Component Based UI Design}
-    UI Designs without actually coding them are like having raw cookie dough pieces without an oven. They are unfinished and can't be properly consumed. 
-    And an oven alone will not make the cookie dough itself. It is the combination of the two that makes delicious cookies. UI Design depends on development and vice versa.
+Figma: Figma is by far the most popular UI Design tool at the moment. It's a cloud-based design tool
+that focuses on real-time collaboration, prototyping and design system creation. The majority of
+features is free to use, which makes it very approachable. Apart from their frequent updates and
+improvements, Figma has a lively community allowing for the creation of plugins, templates and other
+resources. Having robust design system features like components, style definitions and variables,
+Figma is one of the leading tools in the UI Design space.
+(https://help.figma.com/hc/en-us/categories/360002042553)
 
-    Because of this strong dependency, it only makes sense that both disciplines share common concepts and principles. One of these concepts is called Component Based UI Design.
+Sketch: Sketch is a design tool that was first released in 2010. Although, Figma has surpassed
+Sketch in popularity, it still has a large user base. It offers similar features to Figma like
+real-time collaboration, components or prototyping. However, aside from the free, browser-accessible
+file viewer, Sketch is a paid tool available only on macOS. The program has a strong focus on
+creating design systems and has a large library of plugins and templates. (https://www.sketch.com/)
 
-    \subsubsection{The Concept of Components}
-    This concept originates from the programming paradigm called Component Based Software Engineering (CBSE). Without getting too much into the technical details,
-    CBSE is about breaking down software into smaller, reusable parts called components. This modularity allows for easier maintenance, scalability and reliability of code.
-    \vglcite[20,22]{tiwariCOMPONENTBASEDSOFTWAREENGINEERING2024}
-    
-    I mention this specifically, since it is a core principle of modern web development and UI Design. 
-    After the release of AngularJS in 2010, this concept has become a standard in web development. % NOTE: Maybe say that in 2013 Atomic Design was introduced by Brad Frost and got UI Design on board
-    Now almost all popular frontend frameworks like React, Vue or Svelte as well as UI Design tools like Figma and Sketch are built around components. (https://react.dev/) (https://vuejs.org/guide/introduction.html) (https://svelte.dev/)
-    
-    % NOTE: Now maybe say something like "This is why it is crucial for UI Designers to understand this concept and how it can be applied to their work."
-    % NOTE: The basically transitioning to brad frost's atomic design and how he basically tried to translate this concept to UI Design
-    Component Based UI Design is a style of UI Design that focuses on modularity and breaking down the UI into smaller, reusable parts called components.
-    
+Adobe Illustrator and Adobe Photoshop: Although the vector graphics editor Adobe Illustrator and the
+raster graphics editor Adobe Photoshop are not specifically tailored to UI Design, they are widely
+used by designers. Many designers report that they use them as secondary tools aiding in the
+creation of more complex graphics. (https://uxtools.co/survey/2023/ui-design/)
 
-    \subsection{Design Systems}
+In future chapters, I will generally refer to Figma, since it is the most popular tool at the moment
+and also the one I am most familiar with. Although the majority of concepts and techniques mentioned
+will be applicable to other tools as well.
+
+\subsection{Component Based UI Design}
+UI Designs without actually coding them are like having raw cookie dough pieces without an oven.
+They are unfinished and can't be properly consumed. And an oven alone will not make the cookie dough
+itself. It is the combination of the two that makes delicious cookies. UI Design depends on
+development and vice versa.
+
+Because of this strong dependency, it only makes sense that both disciplines share common concepts
+and principles. One of these concepts is called Component Based Design.
+
+\subsubsection{The Concept of Components}
+This concept originates from a programming paradigm called Component Based Software Engineering
+(CBSE). Without getting too much into the technical details, CBSE is about breaking down software
+into smaller, independent and reusable parts called components. This modularity allows for easier
+maintenance, scalability and reliability of code.
+\vglcite[20,22]{tiwariCOMPONENTBASEDSOFTWAREENGINEERING2024}
+
+I mention this specifically, since it is a core principle of modern web development and UI Design.
+After the release of Angular in 2010, this concept started gaining traction in web development.
+(https://angularjs.org/)
+% NOTE: Maybe say that in 2013 Atomic Design was introduced by Brad Frost and got UI Design on board
+Now, almost all popular frontend frameworks like React, Vue or Svelte are built around components.
+(https://react.dev/) (https://vuejs.org/guide/introduction.html) (https://svelte.dev/)
+
+Around the same time as Component Based Design became popular in web development, Brad Frost
+introduced Atomic Design, which translates this programming concept to UI Design. I will go into
+more detail about what Atomic Design is and how to practially use it in later chapters. Essentially
+he took chemistry as an inspiration and composed a methology using five stages called Atoms,
+Molecules, Organisms, Templates and Pages that should serve as a \textit{mental model} for UI
+Designers. \vglcite[42]{frostAtomicDesign2016}
+
+Today, Component Based UI Design is a deep rooted part of almost every Interface Design tool as
+well. That is why I believe it is incredibly crucial for designers to understand this concept and
+how it can be applied to their work. Since, in theory, it would allow them to create designs that go
+hand in hand with the development process. And isn't that the perfect picture we are all striving
+for? Design and development, skipping hand in hand through the meadow, leaving behind a trail of
+beautiful, functional and maintainable interfaces.
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=200pt, height=\textheight,keepaspectratio]{2_chapter/designDevHandInHand.jpg}
+        \caption[Caption (url)]{Design and development, skipping hand in hand through the meadow}
+    \end{center}
+\end{figure}
+
+
+\subsection{Design Systems}
