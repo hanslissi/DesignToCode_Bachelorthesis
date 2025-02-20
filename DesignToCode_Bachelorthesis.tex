@@ -1,9 +1,17 @@
-\documentclass[11pt, english, twoside]{article}
+\documentclass[11pt, english]{article}
 \usepackage[style=authoryear, autocite=inline, maxcitenames=3, maxbibnames=3, uniquename=false, backend=biber]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage[onehalfspacing]{setspace}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 % Customize Inline Citation Format
 \renewcommand*{\finalnamedelim}{/} % Change "and" to "/"
@@ -14,28 +22,28 @@
 \newcommand{\directcite}[2][]{(\cite[#1]{#2})}
 
 % Customize Name Formatting in Bibliography
-% \DeclareNameAlias{author}{family-given} % Ensure "Last, First" format
+\DeclareNameAlias{author}{family-given} % Ensure "Last, First" format
 
-% % Remove ISBN, pages and series
-% \AtEveryBibitem{
-%   \clearfield{isbn}
-%   \clearfield{pagetotal}
-%   \clearfield{series}
-% }
+% Remove ISBN, pages and series
+\AtEveryBibitem{
+  \clearfield{isbn}
+  \clearfield{pagetotal}
+  \clearfield{series}
+}
 
-% % Customize Bibliography Author Format
-% \renewbibmacro*{author}{%
-%   \printnames{author}: 
-% }
+% Customize Bibliography Author Format
+\renewbibmacro*{author}{%
+  \printnames{author}: 
+}
 
-% \renewbibmacro*{publisher+location+date}{%
-%   \printlist{location}:
-%   \iflistundef{publisher}
-%     {}
-%     {\setunit*{\addspace}\printlist{publisher}}%
-%   \setunit*{\addspace}%
-%   \printfield{year}
-% }
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{location}:
+  \iflistundef{publisher}
+    {}
+    {\setunit*{\addspace}\printlist{publisher}}%
+  \setunit*{\addspace}%
+  \printfield{year}
+}
 
 % Load Bibliography
 \addbibresource{citations.bib}
@@ -50,7 +58,6 @@
 
 
 \begin{document}
-Hello World!
 
 % \begin{figure}[h!]
 % \begin{center}
@@ -59,16 +66,17 @@ Hello World!
 % \end{center}
 % \end{figure}
 
+% =============== TABLE OF CONTENTS ===============
+
+\tableofcontents
+
+% =============== TABLE OF CONTENTS ===============
+
+
 % =============== CHAPTERS ===============
 \include{chapters/1_introduction}
 
 \include{chapters/2/0_Basics of Webdesign}
-
-\include{chapters/2/1_User Interface Design}
-
-\include{chapters/2/2_Component Based Design}
-
-\include{chapters/2/3_Design Systems}
 % =============== CHAPTERS ===============
 
 

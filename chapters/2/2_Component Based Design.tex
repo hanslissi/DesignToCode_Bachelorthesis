@@ -1,1 +1,75 @@
-\subsection{Component Based Design}
+\subsection{Component Based UI Design}
+UI Designs without actually coding them are like having raw cookie dough pieces without an oven.
+They are unfinished and can't be properly consumed. And an oven alone will not make the cookie dough
+itself. It is the combination of the two that makes delicious cookies. UI Design depends on
+development and vice versa.
+
+Because of this strong dependency, it only makes sense that both disciplines share common concepts
+and principles. One of these concepts is called Component Based Design.
+
+\subsubsection{The Concept of Components}
+This concept originates from a programming paradigm called Component Based Software Engineering
+(CBSE). Without getting too much into the technical details, CBSE is about breaking down software
+into smaller, independent and reusable parts called components. This modularity allows for easier
+maintenance, scalability and reliability of code.
+\vglcite[20,22]{tiwariCOMPONENTBASEDSOFTWAREENGINEERING2024}
+
+I mention this specifically, since it is a core principle of modern web development and UI Design.
+After the release of Angular in 2010, this concept started gaining traction in web development.
+(https://angularjs.org/)
+% NOTE: Maybe say that in 2013 Atomic Design was introduced by Brad Frost and got UI Design on board
+Now, almost all popular frontend frameworks like React, Vue or Svelte are built around components.
+(https://react.dev/) (https://vuejs.org/guide/introduction.html) (https://svelte.dev/)
+
+Around the same time as Component Based Design became popular in web development, Brad Frost
+introduced Atomic Design, which translates this programming concept to UI Design. I will go into
+more detail about what Atomic Design is and how to practially use it in later chapters. Essentially
+he took chemistry as an inspiration and composed a methology using five stages called Atoms,
+Molecules, Organisms, Templates and Pages that should serve as a \textit{mental model} for UI
+Designers. \vglcite[42]{frostAtomicDesign2016}
+
+Today, Component Based UI Design is a deep rooted part of almost every Interface Design tool as
+well. That is why I believe it is incredibly crucial for designers to understand this concept and
+how it can be applied to their work. Since, in theory, it would allow them to create designs that go
+hand in hand with the development process. And isn't that the perfect picture we are all striving
+for? Design and development, skipping hand in hand through the meadow, leaving behind a trail of
+beautiful, functional and maintainable interfaces.
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=200pt, height=\textheight,keepaspectratio]{2_chapter/designDevHandInHand.jpg}
+        \caption[Caption (url)]{Design and development, skipping hand in hand through the meadow}
+    \end{center}
+\end{figure}
+
+\subsubsection{Atomic Design and Recent Developments}
+So, let us take a closer look at Atomic Design. \\\\
+\textbf{Atoms} \\
+Atoms are the smallest building blocks of the design. They are the basic elements like buttons,
+textfields or icons. Things that cannot be broken down any further. \\\\
+\textbf{Molecules} \\
+Molecules are groups of atoms that together form a simple group of UI. For example, combining
+a headline, an icon and filter buttons it would form a neat filter bar. \\\\
+\textbf{Organisms} \\
+Organisms are more complex groups of UI elements. They can be a combination of atoms, molecules and
+also other organisms. When combining the filter bar molecule, a few buttons and a blog post grid
+organism, it would form a functional blog post overview organism. \\\\
+\textbf{Templates} \\
+Templates are like blueprints of pages. They consist of organisms and molecules and define the
+layout of a page, giving actual meaning to the UI elements. \\\\
+\textbf{Pages}\\
+Pages take templates as a basis and fill them with actual content. These represent how the final
+delivered product will or should look like. \\
+\vglcite[43,53]{frostAtomicDesign2016}
+
+Creating hierarchical systems like this has many benefits.
+
+\textbf{Change it once, change it everywhere}\\
+
+\textbf{Consistency}\\
+
+\textbf{Adhere to the Single Responsibility Principle}\\
+
+\textbf{Support iterative workflows}\\
+
+And many more.
