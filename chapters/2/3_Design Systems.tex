@@ -1,8 +1,43 @@
-\subsection{Design Systems}
-\subsubsection{Parts of the Design System}
-% Just explain the parts: 
-% - Style Guide
-% - Pattern Library
-% - Component Library
-% - Design Tokens
-\subsubsection{Common Best Practices for Design Systems}
+\newpage
+\subsection{Atomic Design Systems}
+So, let us take a closer look at Atomic Design and the reason why I believe it is the best fitting
+design system methology for Design and Code collaboration. Let's begin by looking at how the web
+designer Brad Frost defined hierarchical parts of the system, by looking at chemistry. \\\\
+\textbf{Atoms} \\
+Atoms are the smallest building blocks of the design. They are the basic elements like buttons,
+textfields, colors, fonts or icons. Things that cannot be broken down any further. \\\\
+\textbf{Molecules} \\
+Molecules are groups of atoms that together form a simple group of UI. For example, combining
+a headline, an icon and filter buttons it would form a neat filter bar. \\\\
+\textbf{Organisms} \\
+Organisms are more complex groups of UI elements. They can be a combination of atoms, molecules and
+also other organisms. When combining the filter bar molecule, a few buttons and a blog post grid
+organism, it would form a functional blog post overview organism. \\\\
+\textbf{Templates} \\
+Templates are like blueprints of pages. They consist of organisms and molecules and define the
+layout of a page, giving actual meaning to the UI elements. \\\\
+\textbf{Pages}\\
+Pages take templates as a basis and fill them with actual content. These represent how the final
+delivered product will or should look like. \\
+\vglcite[43,53]{frostAtomicDesign2016}\\
+
+I like to picture this methodology as building with Lego. Atoms are the individual Lego bricks
+which you can't make any smaller. From there, you start sticking them together,
+creating bigger and more exciting builds. Then, by using these defined pieces, you can construct an entire
+Lego world that looks consistent but still gives you the freedom to build anything you imagine.
+
+I might have gotten a bit carried away with the Lego analogy, but it is exactly what we want from
+design systems. Having a set of clearly defined rules, which give both designers and engineers the
+time to actually focus on solving user needs without having to worry about the design getting
+inconsistent. \vglcite[13]{vesselovBuildingDesignSystems2019}
+
+
+\textbf{Change it once, change it everywhere}\\
+
+\textbf{Consistency}\\
+
+\textbf{Adhere to the Single Responsibility Principle}\\
+
+\textbf{Support iterative workflows}\\
+
+And many more.
