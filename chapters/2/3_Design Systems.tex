@@ -32,27 +32,46 @@ time to actually focus on solving user needs without having to worry about the d
 inconsistent. \vglcite[13]{vesselovBuildingDesignSystems2019}
 
 \subsubsection{Advantages and Drawbacks}
-
+Having such a hierarchical component based design system has major advantages but also comes with
+drawbacks. If we know what to look out for, we can be prepared to tackle these challenges. \\\\
 \begin{itemize}
 	\item Advantages
 	      \begin{description}
-		      \item[Change it once, change it everywhere] 
-		      \item[Adhere to the Single Responsibility Principle] % Small desc of what it is and
-		      % cite brad frost
-		      \item[Opportunity to work as close with devs as possible] % The structure of the
-		      % system is very close to how devs work and that makes it easier to communicate
+		      \item[Support iterative workflows] - Working with Atomic Design supports an iterative
+		            workflow. You can start with the smallest elements, build up some definitions and then
+		            take a step back to look at how they work together. As soon as you notice that
+		            something is not working together, you can go back and adjust the smaller
+		            elements. Having this flexibility, while still having a clear structure, working
+		            iteratively becomes much easier. \vglcite[57]{frostAtomicDesign2016}
+		      \item[Changing it once, changes it everywhere] - Let's say you notice that the padding
+		            of a button is too small. You can change it in the button definition and all buttons
+		            accross the whole design system using this definition will be updated. This way,
+		            you never have to completely redo everything, since there is always one source
+		            of truth.
+		      \item[Opportunity to work as close with devs as possible] - As already mentioned
+		            before, the structure of the system is very close to how devs actually work.
+		            If you think about it, integrating this hierarchical, component-based system
+		            into the design process from the start should naturally streamline collaboration
+		            and make the handoff between design and development much smoother.
+		            % NOTE: Show UI Design and Developed Code and how similar it can be
 	      \end{description}
 	\item Drawbacks
 	      \begin{description}
-		      \item[Confusion about nomenclature]
-		      % https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston it has to
-		      % be altered a little bit to fit needs or Sarah Vesselov's book page 28
-
+		      \item[Confusion about nomenclature] - Many teams struggle with the abstract terms of
+		      Atomic Design and have a hard time assigning components to the right category. The
+		      team at Bridge Studio for example, decided to use different terms like "Foundations"
+		      or "Components" to make it easier to group and understand the elements. However, they
+		      still kept the mindset of Atomic Design.
+		      (https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston)
+			  
+			  Brad Frost actually encourages teams to adapt
+		      the system to their needs, but keeping the core principles in mind. \vglcite[59]{frostAtomicDesign2016}
+		            % https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston it has to
+		            % be altered a little bit to fit needs or Sarah Vesselov's book page 28
+		      \item[Feeling too restricted] - 
 	      \end{description}
 \end{itemize}
 
 \subsubsection{Common Best Practices}
-% Basically say that naming should be clear but not too specific, that many teams like the one here
-% https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston are using a foundations
-% page. Using Figma features for design tokens such as variables and styles. Not overdoing it right
+% Basically say that naming should be clear but not too specific, Using Figma features for design tokens such as variables and styles. Not overdoing it right
 % from the start cite: Sarah Vesselov's book page 21
