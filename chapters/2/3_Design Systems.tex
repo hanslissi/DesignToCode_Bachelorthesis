@@ -1,5 +1,5 @@
 \newpage
-\subsection{Atomic Design Systems}
+\subsection{Atomic Design Systems} % NOTE: Add pictures of atoms, ... in use
 So, let us take a closer look at Atomic Design and the reason why I believe it is the best fitting
 design system methology for Design and Code collaboration. Let's begin by looking at how the web
 designer Brad Frost defined hierarchical parts of the system, by looking at chemistry. \\\\
@@ -21,23 +21,38 @@ Pages take templates as a basis and fill them with actual content. These represe
 delivered product will or should look like. \\
 \vglcite[43,53]{frostAtomicDesign2016}\\
 
-I like to picture this methodology as building with Lego. Atoms are the individual Lego bricks
-which you can't make any smaller. From there, you start sticking them together,
-creating bigger and more exciting builds. Then, by using these defined pieces, you can construct an entire
-Lego world that looks consistent but still gives you the freedom to build anything you imagine.
+Picture this methodology as building with Lego. Atoms are the individual Lego bricks
+which you can't make any smaller. From there, you start sticking them together,creating bigger and
+more exciting builds. Then, by using these defined pieces, you can construct an entire Lego world
+that looks consistent but still gives you the freedom to build anything you imagine.
 
 I might have gotten a bit carried away with the Lego analogy, but it is exactly what we want from
 design systems. Having a set of clearly defined rules, which give both designers and engineers the
 time to actually focus on solving user needs without having to worry about the design getting
 inconsistent. \vglcite[13]{vesselovBuildingDesignSystems2019}
 
+\subsubsection{Advantages and Drawbacks}
 
-\textbf{Change it once, change it everywhere}\\
+\begin{itemize}
+	\item Advantages
+	      \begin{description}
+		      \item[Change it once, change it everywhere] 
+		      \item[Adhere to the Single Responsibility Principle] % Small desc of what it is and
+		      % cite brad frost
+		      \item[Opportunity to work as close with devs as possible] % The structure of the
+		      % system is very close to how devs work and that makes it easier to communicate
+	      \end{description}
+	\item Drawbacks
+	      \begin{description}
+		      \item[Confusion about nomenclature]
+		      % https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston it has to
+		      % be altered a little bit to fit needs or Sarah Vesselov's book page 28
 
-\textbf{Consistency}\\
+	      \end{description}
+\end{itemize}
 
-\textbf{Adhere to the Single Responsibility Principle}\\
-
-\textbf{Support iterative workflows}\\
-
-And many more.
+\subsubsection{Common Best Practices}
+% Basically say that naming should be clear but not too specific, that many teams like the one here
+% https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston are using a foundations
+% page. Using Figma features for design tokens such as variables and styles. Not overdoing it right
+% from the start cite: Sarah Vesselov's book page 21
