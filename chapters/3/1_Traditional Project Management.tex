@@ -1,0 +1,76 @@
+\newpage
+\subsection{Traditional Project Management}
+% Explain waterfall model (maybe a little sarcastic painting the perfect world) and then oops yeah
+% that's why it is not really working for web projects. Cause working in Silos is bad.
+% First quickly explain waterfall model.
+% Then say advantages and disadvantages.
+% Then say why it is not working for web projects.
+%  - After project finish there is a product, but in between there is almost never a working product.
+%  - Silos are bad, long handoffs, no way to change design after development started.
+%  - No way to react to user feedback.
+%  - No way to react to changing requirements.
+The most traditional way of managing software projects is the Waterfall model. It breaks down the
+project into several phases, where each phase is completed before the next one starts. That means
+it's a very linear approach, the project \textit{flows} from one phase to the next, with handoffs in
+between. \vglcite{theinstituteofprojectmanagementWaterfallMethodology2022}
+
+For a typical software or web project, the phases are usually something like this: % NOTE: Maybe add a graphic
+\begin{enumerate}
+    \item Requirements
+    \begin{description}
+        \item Conduct research and gather requirements for the project. Collect as much information
+        as possible to then create a detailed project plan.
+    \end{description}
+    \item Design
+    \begin{description}
+        \item Create the design based on the requirements that show how the final product will look
+        and how this will be achieved. This includes UI, but also architecture design. 
+    \end{description}
+    \item Implementation \& Testing
+    \begin{description}
+        \item Develop the product based on the design and test it to ensure it meets the
+        requirements.
+    \end{description}
+    \item Verification \& Integration
+    \begin{description}
+        \item The product is validated to check if all requirements are met. If everything works,
+        the product is launched.
+    \end{description}
+    \item Maintenance
+    \begin{description}
+        \item After launch the product is maintained and updated as needed.
+    \end{description}
+\end{enumerate}
+
+When looking at the sequence of these phases, it may seem like it's a perfect solution for all kinds
+of projects. However, while this model works especially for projects that have a defined and fixed
+scope, many software or web projects don't exactly work that way. Also, teams of different
+disciplines work separately from each other, forming silos.
+\vglcite{theinstituteofprojectmanagementWaterfallMethodology2022}  
+
+So, let's look at some common problems and their effects, to understand what can be optimized in the
+workflow.
+
+As UX/UI Designers, we want to create the best product for the target audience. This means that the
+design process is not a one-time thing. It's an iterative process that 
+
+\subsubsection{Common Problems and Effects of Bad Collaboration}
+\textbf{Long Handoffs} \\
+When the design is finished and handed off to the development team, you can imagine that it's going
+to be a long meeting. The developers need to understand the design from the ground up, which can
+lead to misunderstandings, misinterpretations and a lot of back and forth.\\\\
+\textbf{No end-user prioritization} \\
+The focus on meeting requirements first specified, can lead to a product that doesn't actually comply
+with the needs of the user. As there is almost no way to go back and change the design, the products
+success is only really revealed after launch which is very risky.\\\\
+\textbf{No UX focus} \\
+Adding to the previous point, without much end-user feedback usability testing and other UX methods are
+cut short making it hard to emphazise UX. Even if usability testing is integrated, it is extremely
+costly to go back and change the initial design in later phases such as implementation.\\\\
+\textbf{Risk of nothing to show for} \\
+Another result of the linear, separate team approach is that there isn't a working version of the
+product for quite some time. So, when the project is cancelled prematurely, there could be nothing
+to show for.\\
+\vglcite{theinstituteofprojectmanagementWaterfallMethodology2022}
+% NOTE: mach so ne grafik rein:
+% https://www.google.com/search?sca_esv=61eddb219bf0e5e6&sxsrf=AHTn8zo4RD4tpO9VjZHRDRIlptCIvp0pGQ:1741695083635&q=project+change+cost+over+project+timeline+graph%C3%A4&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBkzPWUS0OtApxR2914vrjk4ZqZZ4I2IkJifuoUeV0iQtITiOPPo9tDzmt9ZPGYJiIba3ipclDVbOjJlvTbgEP2s-bkOIhr5ELgbQI8I7zKhriYCgRXaYljMf-YpaNgLRzy2fJ38VbFwBTF_D5ZCA5_SutZQD&sa=X&ved=2ahUKEwiplpHm_4GMAxW6S_EDHckeGToQtKgLegQIFxAB&biw=1680&bih=913&dpr=2#vhid=jRm_exLG44TCIM&vssid=mosaic 
