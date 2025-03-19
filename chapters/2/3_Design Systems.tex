@@ -1,12 +1,12 @@
 \newpage
 \subsection{Atomic Design Systems} \label{Atomic Design Systems}
 % NOTE: Add pictures of atoms, ... in use
-So, let us take a closer look at Atomic Design and the reason why I believe it is the best fitting
-design system methology for Design and Code collaboration. Let's begin by looking at how the web
-designer Brad Frost used chemistry to define a hierarchical system. \\\\
+This section will explore Atomic Design and its suitability for design and code collaboration. Web
+designer Brad Frost introduced this design system methology by drawing on chemistry to define a
+hierarchical system. \\\\
 \textbf{Atoms} \\
 Atoms are the smallest building blocks of the design. They are the basic elements like buttons,
-textfields, colors, fonts or icons. Things that cannot be broken down any further. \\\\
+textfields, colors, fonts or icons. Parts that cannot be broken down any further. \\\\
 \textbf{Molecules} \\
 Molecules are groups of atoms that together form a simple group of UI. For example, combining
 a headline, an icon and filter buttons it would form a neat filter bar. \\\\
@@ -33,22 +33,23 @@ engineers the time to actually focus on solving user needs without concerns abou
 getting inconsistent or feeling too constrained. \vglcite[13]{vesselovBuildingDesignSystems2019}
 
 \subsubsection{Advantages and Drawbacks}
-Having such a hierarchical component based design system has major advantages but also comes with
-drawbacks. If we know what to look out for, we can be prepared to tackle these challenges. \\\\
+Having such a hierarchical component based design system has major advantages, however, it also
+comes with several drawbacks. In order to tackle these challenges, it is essential to know what to
+look out for.\\\\
 \begin{itemize}
 	\item Advantages
 	      \begin{description}
 		      \item[Support iterative workflows] - Working with Atomic Design supports an iterative
-		            workflow. You can start with the smallest elements, build up some definitions and then
-		            take a step back to look at how they work together. As soon as you notice that
-		            something is not working together, you can go back and adjust the smaller
-		            elements. Having this flexibility, while still having a clear structure, working
-		            iteratively becomes much easier. \vglcite[57]{frostAtomicDesign2016}
-		      \item[Changing it once, changes it everywhere] - Let's say you notice that the padding
-		            of a button is too small. You can change it in the button definition and all buttons
-		            accross the whole design system using this definition will be updated. This way,
-		            you never have to completely redo everything, since there is always one source
-		            of truth.
+		            workflow. You can start with the smallest elements, build up a number of
+		            definitions, then take a step back to look at how they work together. As soon as
+		            something is not working together, the smaller elements can be adjusted. Having
+		            this flexibility, while still having a clear structure, working iteratively
+		            becomes much easier. \vglcite[57]{frostAtomicDesign2016} 
+		      \item[Changing it once, changes it everywhere] - When noticing that the padding
+		            of a button is too small. It can be changed in the button definition and every
+		            button accross the whole design system using this definition will be updated.
+		            This way, a tedious redo of everything is avoided, since there is always one
+		            source of truth.
 		      \item[Opportunity to work as close with devs as possible] - As already mentioned
 		            before, the structure of the system is very close to how devs actually work.
 		            If you think about it, integrating this hierarchical, component-based system
@@ -56,26 +57,31 @@ drawbacks. If we know what to look out for, we can be prepared to tackle these c
 		            and make the handoff between design and development much smoother.
 
 		            \includegraphics[width=400pt, height=\textheight,keepaspectratio]{2_chapter/Design To Code Similarities.jpg}
-					^^ Sample image showing how similar the design and code can be in terms of structure
+		            ^^ Sample image showing how similar the design and code can be in terms of structure
 		            % NOTE: Show Picture UI Design and Developed Code and how similar it can be
 	      \end{description}
 	\item Drawbacks
 	      \begin{description}
-		      \item[Confusion about nomenclature] - Many teams struggle with the abstract terms of
-		            Atomic Design and have a hard time assigning components to the right category. The
-		            team at Bridge Studio for example, decided to use different terms like "Foundations"
-		            or "Components" to make it easier to group and understand the elements. However, they
-		            still kept the mindset of Atomic Design.
+		      \item[Confusion about nomenclature] - Some teams struggle with the abstract terms of
+		            Atomic Design and have a hard time assigning components to the right category.
+		            As an example, the team at Bridge Studio for example, decided to use different
+		            terms like "Foundations" or "Components" to make it easier to group and
+		            understand the elements. However, they still kept the mindset of Atomic Design.
 		            (https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston)
 
-		            Brad Frost actually encourages teams to adapt
-		            the system to their needs, but keeping the core principles in mind. \vglcite[59]{frostAtomicDesign2016}
+		            Brad Frost actively encourages teams to adapt the system to their needs, by
+		            keeping the core principles in mind and altering the notations for example.
+		            \vglcite[59]{frostAtomicDesign2016}
 		            % https://www.linkedin.com/pulse/whats-wrong-atomic-design-james-eccleston it has to
 		            % be altered a little bit to fit needs or Sarah Vesselov's book page 28
-		      \item[Feeling too restricted] - 
+		      \item[Feeling too restricted] - When working with a design system, it often feels like
+		            it hinders creativity. It definitely can, if not used correctly. It is important
+		            to remember that it is a tool to help, not restrict. As the product, the design
+		            system is intended for, evolves iteratively, so should the design system.
+		            \vglcite[106]{vesselovBuildingDesignSystems2019}
 	      \end{description}
 \end{itemize}
- 
+
 \subsubsection{Common Best Practices}
 % Basically say that naming should be clear but not too specific, Using Figma features for design tokens such as variables and styles. Not overdoing it right
 % from the start cite: Sarah Vesselov's book page 21
