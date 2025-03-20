@@ -93,14 +93,14 @@ developers to find the best solution within the given target, budget, and timeli
 
 \textbf{Bad and Good Practices:}\\
 Respondents identified several specific bad practices that they would like to see less of in the
-future. Here, the most commonly named was that there are too many different components and variants,
-with one dev recognizing that maybe designers and developers have a different understanding of what
-a component is: "Having similar components in thousands of variants is the default mode in design
-tools, while in development having few components with a few variants is the default". Also
-"inconsistency thoughout repearing patterns" were mentioned as a common practice as well as not
-using the already designed or developed components.
-These results shows again that a diverging understanding of components may be present and that
-design systems are not yet used to their full potential.
+future. Here, the most commonly named was that there are too many different components and variants
+where it is not needed, with one dev recognizing that maybe designers and developers have a
+different understanding of what a component is: "Having similar components in thousands of variants
+is the default mode in design tools, while in development having few components with a few variants
+is the default". Also "inconsistency thoughout repeating patterns" were mentioned as a common
+practice as well as not using the already designed or developed components. These results shows
+again that a diverging understanding of components may be present and that design systems are not
+yet used to their full potential.
 
 On the other hand, helpful practices mentioned by the engineers include using clearly defined design
 tokens, fonts and colors consistently as well as defining edge-case behaviours and annotating
@@ -115,18 +115,73 @@ to these problems.
 %   this be a new component or a variant of an existing one? Or is this not a component after all?".
 %   Even in the coding world there are different best practices how to structure components. So, it
 %   probably is best to ask the team and agree on some basic guidelines. The basic rule of thumb is
-%   if a part of a design is used more than once, it should be a component. 
+%   if a part of a design is used more than once, it should be a component. Also maybe design tools
+%   somehow encourage the craetion of too many components as it is very easy to create a component
+%   in Figma. Variants are also very powerful, but should only be used to group together different
+%   styles of the same component. This would also lead to a closer design and code parity, since in
+%   code this is handled very similarly. (<Button variant="primary" size="large">)
+
+% - Unclear layouts: It seems as though responsive layouts are often not well enough defined. Maybe
+%   this is due to the fact that designers are working in a pretty fixed setting. Devs can drag the 
+%   browser window easily to see how the design behaves. Also, defined grids are pretty rigid and
+%   devs often have a hard time to make them work responsively. A proper definition of how grids
+%   behave in different breakpoints could definitely help there => Devs use defined breakpoints,
+%   designers should use the same ones to define how the design should behave at those specific
+%   breakpoints. Also
+
 % - Time Constraints: It seems as though the time constraints cause a lot of issues. Often
 %   documentation and proper definition of edge cases as well as hover, empty states are left out.
 %   Maybe prioritizing these aspects more could help. Also maybe doing handoffs more often and in
 %   smaller batches like Agile workflows suggest could be helpful, as the developers wouldn't need
 %   to wait for the whole design to be finished without proper documentation, but could start
-%   working sooner with the parts that are already properly defined.
-% - 
+%   working sooner with the parts that are already properly defined. Team working agreements can
+%   help with that (Lean UX page 87)
 
-
-
-
-
-
+% - Conclusion:
 % NOTE: Design and Code Parity: https://designsystemdiaries.com/p/figma-to-code-design-system-parity
+
+A common theme throughout the survey was the misalignment in understanding components. It seems as
+if designers and developers are using components a little differently, despite using the same
+nomeclature. One of the most frequently asked questions in both disciplines is whether an element
+should be a new component, a variant of an existing one, or not a component at all. Although there
+are different best practices for structuring components in code, the basic rule of thumb is that if
+a part is used more than once, it should be a component. The same could simply be done in design
+tools. Variants should be used to group components that use the same properties like layout, state,
+size, count or others as Figma suggests. \vglcite{figmaCreatingOrganizingVariants2025} 
+
+Generally, establishing some basic guidelines for the team helps to improve design-code parity as it
+is possible to have a similar structrure in both code and design. 
+% NOTE: Graphics of design and code parity with like idk <Button variant="primary" size="large"> 
+
+Another frequently mentioned issue was the unclear definition of responsive layouts. While design
+tools often work in a rather fixed setting, developers can easily switch their viewport to see how
+the design behaves. While grids can already be helpful for both, sometimes sizings are hard to
+interpret for developers. When setting up desktop, tablet and mobile grids, it is important to agree
+on universal breakpoints used by both groups. Furthermore, defining a number of simple page layouts
+with specified maximum and  minimum sizes for certain elements like navigation and content can be
+extremely beneficial. 
+% NOTE: Maybe I can have the spacing shizzle I defined for EA
+This way, developers can implement grids more easily without guesswork and even designers benefit as 
+they can take these defined layout grids as a starting point for page designs. Also, defining tablet
+and mobile versions of components directly next to each other can help the developers to quickly
+implement and quality check the design. 
+
+These suggested practices also improves the consistency of repeating patterns, which was another
+problem mentioned in the survey. Design tokens like colors, fonts and spacings also fit into the
+same category, although they seem to be managed quite well by designers already.
+
+Lastly, time constraints seem to be the root cause to many smaller details. Tasks that are done late
+in the process like documentation, definition of edge cases, empty states or focus states come short
+when there is no time left. While teams may not be in control of the deadlines, they can change how
+they work together. As described in chapter \ref{Agile Project Management & Lean UX}, working in an
+Agile manner with smaller handoffs and much more frequent check-ins can boost the workflow. With
+smaller handoffs, it may be possible to prioritise documentation, edge cases and other details more
+consistently and earlier in the process. 
+
+Lean UX further suggests that teams should create a so-called \textit{Team Working Agreement} to
+define how they want to work together. This includes development practices, requirements for design,
+working hours and more and is refined with each retrospective meeting. 
+\vglcite[87, 89]{gothelfLeanUXProduktentwicklung2016} \\\\ 
+
+This concludes my analysis of the survey results. Although, the sample size was small, the insights
+are very valuable and serve as a great foundation for the practical part of this thesis.
