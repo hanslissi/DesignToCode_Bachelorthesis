@@ -15,6 +15,9 @@
     urlcolor=black
 }
 
+\setlength{\parindent}{0pt} % Kein Einzug am Anfang eines Absatzes
+\setlength{\parskip}{0.75em} % Abstand zwischen Absätzen
+
 % Customize Inline Citation Format
 \renewcommand*{\finalnamedelim}{/} % Change "and" to "/"
 \renewcommand*{\multinamedelim}{/} % Change ", " to "/"
@@ -68,6 +71,13 @@
 % \end{center}
 % \end{figure}
 
+% =============== ABSTRACT ===============
+
+\include{chapters/0_Abstract}
+
+% =============== ABSTRACT ===============
+
+
 % =============== TABLE OF CONTENTS ===============
 
 \tableofcontents
@@ -76,6 +86,7 @@
 
 
 % =============== CHAPTERS ===============
+
 \include{chapters/1_introduction}
 
 \include{chapters/2/0_Basics of Webdesign}
