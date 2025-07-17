@@ -1,26 +1,28 @@
 \newpage
 \subsection{Atomic Design Systems} \label{Atomic Design Systems}
-% NOTE: Add pictures of atoms, ... in use
+% NOTE DONE: Add pictures of atoms, ... in use
 This section will explore Atomic Design and its suitability for design and code collaboration. Web
 designer Brad Frost introduced this design system methodology by drawing on chemistry to define a
-hierarchical system. 
+hierarchical system.
 
 \textbf{Atoms} \\
 Atoms are the smallest building blocks of the design. They are the basic elements like buttons,
-textfields, colors, fonts or icons. Parts that cannot be broken down any further. 
+textfields, colors, fonts or icons. Parts that cannot be broken down any further.
 
 \textbf{Molecules} \\
 Molecules are groups of atoms that together form a simple group of UI. For example, combining
-a headline, an icon and filter buttons it would form a neat filter bar. 
+a headline, an icon and filter buttons it would form a neat filter or navigation bar. The
+abstract Atoms assemble to have a purpose.
 
 \textbf{Organisms} \\
 Organisms are more complex groups of UI elements. They can be a combination of atoms, molecules and
-also other organisms. When combining the filter bar molecule, a few buttons and a blog post grid
-organism, it would form a functional blog post overview organism. 
+also other organisms. When combining the bar molecules, a few buttons and an image atom, it would
+form a functional booking service header.
 
 \textbf{Templates} \\
 Templates are like blueprints of pages. They consist of organisms and molecules and define the
-layout of a page, giving actual meaning to the UI elements. 
+layout of a page, giving actual meaning to the UI elements. It shows the thought out content
+structure, without any real content.
 
 \textbf{Pages}\\
 Pages take templates as a basis and fill them with actual content. These represent how the final
@@ -50,7 +52,7 @@ look out for.
 		            definitions, then take a step back to look at how they work together. As soon as
 		            something is not working together, the smaller elements can be adjusted. Having
 		            this flexibility, while still having a clear structure, working iteratively
-		            becomes much easier. \vglcite[57]{frostAtomicDesign2016} 
+		            becomes much easier. \vglcite[57]{frostAtomicDesign2016}
 		      \item[Changing it once, changes it everywhere] - When noticing that the padding
 		            of a button is too small. It can be changed in the button definition and every
 		            button accross the whole design system using this definition will be updated.
@@ -62,9 +64,14 @@ look out for.
 		            into the design process from the start should naturally streamline collaboration
 		            and make the handoff between design and development much smoother.
 
-		            \includegraphics[width=400pt, height=\textheight,keepaspectratio]{2_chapter/Design To Code Similarities.jpg}
+		            \begin{figure}[h!]
+			            \begin{center}
+				            \includegraphics[width=400pt, height=\textheight,keepaspectratio]{2_chapter/Design To Code Similarities.jpg}
+				            \caption[Caption (url)]{Caption visible}
+			            \end{center}
+		            \end{figure}
 		            ^^ Sample image showing how similar the design and code can be in terms of structure
-		            % NOTE: Add graphics UI Design and Developed Code and how similar it can be
+		            % NOTE DONE: Add graphics UI Design and Developed Code and how similar it can be
 	      \end{description}
 	\item Drawbacks
 	      \begin{description}
@@ -73,7 +80,7 @@ look out for.
 		            As an example, the team at Bridge Studio for example, decided to use different
 		            terms like "Foundations" or "Components" to make it easier to group and
 		            understand the elements. However, they still kept the mindset of Atomic Design.
-					\vglcite{jamesecclestonWhatsWrongAtomic2021}
+		            \vglcite{jamesecclestonWhatsWrongAtomic2021}
 
 		            Brad Frost actively encourages teams to adapt the system to their needs, by
 		            keeping the core principles in mind and altering the notations for example.
@@ -86,7 +93,7 @@ look out for.
 	      \end{description}
 \end{itemize}
 
-\subsubsection{Common Best Practices}
+% \subsubsection{Common Best Practices}
 % Basically say that naming should be clear but not too specific, Using Figma features for design tokens such as variables and styles. Not overdoing it right
 % from the start cite: Sarah Vesselov's book page 21
 % Think of it as a process iteratively evolving over time like the product it is used for. The Design
