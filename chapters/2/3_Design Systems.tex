@@ -13,6 +13,7 @@ hierarchical system.
 \end{figure}
 Atoms are the smallest building blocks of the design. They are the basic elements like buttons,
 textfields, colors, fonts or icons. Parts that cannot be broken down any further.
+\vglcite[43,44]{frostAtomicDesign2016} 
 
 \textbf{Molecules} \\
 \begin{figure}[H]
@@ -20,9 +21,9 @@ textfields, colors, fonts or icons. Parts that cannot be broken down any further
     \includegraphics[width=250pt]{Chapter 2/Molecules.png}
     \caption{Atomic Design: Example of Molecules (Source: own illustration)}
 \end{figure}
-Molecules are groups of atoms that together form a simple group of UI. For example, combining
-a headline, an icon and filter buttons it would form a neat filter or navigation bar. The
-abstract Atoms assemble to have a purpose.
+Molecules are groups of Atoms that together form a simple group of UI. For example, combining
+a headline, an icon and filter buttons it would form a neat filter or navigation bar. Abstract Atoms
+assemble to have a purpose. \vglcite[44,45]{frostAtomicDesign2016} 
 
 \textbf{Organisms} \\
 \begin{figure}[H]
@@ -30,9 +31,9 @@ abstract Atoms assemble to have a purpose.
     \includegraphics[width=250pt]{Chapter 2/Organisms.png}
     \caption{Atomic Design: Example of an Organism (Source: own illustration)}
 \end{figure}
-Organisms are more complex groups of UI elements. They can be a combination of atoms, molecules and
-also other organisms. When combining the bar molecules, a few buttons and an image atom, it would
-form a functional booking service header.
+Organisms are more complex groups of UI elements. They can be a combination of Atoms, Molecules and
+also other Organisms. When combining the bar Molecules, a few buttons and an image Atom, it would
+form a functional booking service header. \vglcite[46,48]{frostAtomicDesign2016}
 
 \textbf{Templates} \\
 \begin{figure}[H]
@@ -40,9 +41,9 @@ form a functional booking service header.
     \includegraphics[width=250pt]{Chapter 2/Templates.png}
     \caption{Atomic Design: Example of a Template (Source: own illustration)}
 \end{figure}
-Templates are like blueprints of pages. They consist of organisms and molecules and define the
+Templates are like blueprints of pages. They consist of Organisms and Molecules and define the
 layout of a page, giving actual meaning to the UI elements. It shows the thought out content
-structure, without any real content.
+structure, without any real content. \vglcite[48,51]{frostAtomicDesign2016}
 
 \textbf{Pages}\\
 \begin{figure}[H]
@@ -50,22 +51,21 @@ structure, without any real content.
     \includegraphics[width=250pt]{Chapter 2/Pages.png}
     \caption{Atomic Design: Example of a Page (Source: own illustration)}
 \end{figure}
-Pages take templates as a basis and fill them with actual content. These represent how the final
-delivered product will or should look like. \\
-\vglcite[43,53]{frostAtomicDesign2016}\\
+Pages take Templates as a basis and fill them with actual content. These represent how the final
+delivered product will or should look like. \vglcite[52,55]{frostAtomicDesign2016}
 
 Picturing this methodology as building with Lego often helps improve understanding. Atoms can be
 seen as individual Lego bricks which cannot be made any smaller. These bricks can be stacked
 together creating bigger more complex builds. By using these defined pieces, a Lego world can be
-construced that always looks consistent, but is still flexible enough to build anything.
+constructed that always looks consistent, but is still flexible enough to build anything.
 
 While this analogy seems simple, it is actually quite powerful, since it demonstrates exactly what
-we want from design systems. Having a set of clearly defined rules, which give both designers and
-engineers the time to actually focus on solving user needs without concerns about the design
+we want from design systems. Having a set of clearly defined rules. Rules which give both designers
+and engineers the time to actually focus on solving user needs without concerns about the design
 getting inconsistent or feeling too constrained. \vglcite[13]{vesselovBuildingDesignSystems2019}
 
 \subsubsection{Advantages and Drawbacks}
-Having such a hierarchical component based design system has major advantages, however, it also
+Having such a hierarchical component based design system has major advantages. However, it also
 comes with several drawbacks. In order to tackle these challenges, it is essential to know what to
 look out for.
 
@@ -79,15 +79,15 @@ look out for.
 		            this flexibility, while still having a clear structure, working iteratively
 		            becomes much easier. \vglcite[57]{frostAtomicDesign2016}
 		      \item[Changing it once, changes it everywhere] - When noticing that the padding
-		            of a button is too small. It can be changed in the button definition and every
-		            button accross the whole design system using this definition will be updated.
+		            of a button is too small, it can be changed in the button definition and every
+		            button across the whole design system using this definition will be updated.
 		            This way, a tedious redo of everything is avoided, since there is always one
 		            source of truth.
 		      \item[Opportunity to work as close with devs as possible] - As already mentioned
 		            before, the structure of the system is very close to how devs actually work.
-		            If you think about it, integrating this hierarchical, component-based system
-		            into the design process from the start should naturally streamline collaboration
-		            and make the handoff between design and development much smoother.
+		            Integrating this hierarchical, component-based system into the design process
+		            from the start should, in theory, naturally streamline collaboration and make
+		            the handoff between design and development much smoother.
 
 		            \begin{figure}[h!]
 			            \begin{center}
