@@ -1,7 +1,5 @@
 \newpage
 \subsection{Survey}
-
-\subsubsection{Goal of the Survey}
 The goal of this qualitative survey was to gather in-depth data about designer-developer
 collaboration patterns and identify key friction points in their workflows.
 
@@ -40,28 +38,28 @@ and a hint of humor to make it more engaging.
 % NOTE DONE: show the graphics specially made for the survey
 
 As the survey was designed to reach both beginners and experienced professionals, the survey was
-distributed to a wide range of channels:
+distributed at via the following channels.
 \begin{itemize}
     \item Two small web development companies with a focus on design
-    \item A list of Design and Software Development students at FH Joanneum
-    \item LinkedIn connections
+    \item A list of design and doftware development students at FH Joanneum
     \item Personal designer and developer contacts
+    \item LinkedIn connections
 \end{itemize}
 
 \subsubsection{Presentation of Survey Results}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=300pt]{Chapter 4/Respondents.png}
-    \caption{Respondents of Survey (Source: own illustration)}
-\end{figure}
 Over a duration of 30 days, 31 people responded to the survey. 13 of which considered themselves
 primarily as designers, 9 as developers and 9 were not in the target group. While the sample size is
 small, the results are qualitative and provide valuable insights and perspectives. This chapter is
 entirely based on the results of this survey. All data presented reflect the responses collected by
 the author and are included in the appendix.
 
-The majority of designers have not yet had as many years of professional experience as the
-developers.
+The majority of the participating designers have not yet had as many years of professional
+experience as the developers.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=300pt]{Chapter 4/Respondents.png}
+    \caption{Respondents of Survey (Source: own illustration based on survey data)}
+\end{figure}
 % NOTE DONE: Show some numbers here, bar graphs with two bars (one for designer one for developer could
 % be suitable here)
 
@@ -69,11 +67,11 @@ The survey supported online claims of Figma being the most popular design tool. 
 said they use Figma for designing interfaces. Tools like Photoshop are still used by 25\% as
 secondary tools.
 
-\textbf{Knowledge of the other discipline:}\\
+\textbf{Knowledge of the Other Discipline}\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=300pt]{Chapter 4/Rating.png}
-    \caption{Rating understanding of other discipline (Source: own illustration)}
+    \caption{Rating understanding of other discipline (Source: own illustration based on survey data)}
 \end{figure}
 When asked about their understanding of the other discipline, the majority of designers rated their
 web development knowledge at 3/5 stars, knowing the basics of HTML, CSS and JavaScript. 2 of
@@ -82,22 +80,23 @@ know their way around design tools like Figma with 75\% rating their comfort lev
 Responses suggest that while there is a general understanding of the other disciplines tools, there
 is room for improvement.
 
-\textbf{Discrepancies between Design and Implementation:}\\
+\textbf{Discrepancies between Design and Implementation}\\
 81\% of designers said they have experienced discrepancies between design and implementation. The
-most common reasons being time constraints, misinterpretation by developers and "Special cases like
-complex animations, Popups, Microinteractions". When asked about the main issues with design
+most common reasons being time constraints, misinterpretation by developers and "special cases like
+complex animations, popups, microinteractions". When asked about the main issues with design
 handoffs, developers claimed that "Too few designed states (missing hover, focus, \dots)" and
 the unclarity of responsive layouts were the most common. Noteworthy is also that devs think complex
 components as well as animations, popups or modals are often not well enough specified or
 documented. Furthermore, designs not having a component-based approach seem to be a problem, despite
 over 80\% of designers claiming they work with such an approach.
+
 These results suggest that there is a common ground for persisting issues. While designers seem to
 be aware of component-based design, there may be a misalignment in how it is understood between
 disciplines.
 % NOTE: In discussion mention that maybe the designers should learn component based design a little
 % better or that they should learn how to structure them better
 
-\textbf{Communication:}\\
+\textbf{Communication}\\
 Despite none of the engineers thinking that "lack of communication with designers" is a re-occurring
 issue, some designers state that "more time together with developer[s] and clear communication"
 would be beneficial for the workflow.
@@ -116,19 +115,19 @@ developers to find the best solution within the given target, budget, and timeli
 \end{figure}
 % NOTE DONE: Add Quote here
 
-\textbf{Bad and Good Practices:}\\
+\textbf{Bad and Good Practices}\\
 Respondents identified several specific bad practices that they would like to see less of in the
 future. Here, the most commonly named was that there are too many different components and variants
 where it is not needed, with one dev recognizing that maybe designers and developers have a
 different understanding of what a component is: "Having similar components in thousands of variants
 is the default mode in design tools, while in development having few components with a few variants
 is the default". Also "inconsistency throughout repeating patterns" were mentioned as a common
-practice as well as not using the already designed or developed components. These results shows
+practice as well as not reusing the already designed or developed components. These results shows
 again that a diverging understanding of components may be present and that design systems are not
 yet used to their full potential.
 
 On the other hand, helpful practices mentioned by the engineers include using clearly defined design
-tokens, fonts and colors consistently as well as defining edge-case behaviours and annotating
+tokens, fonts and colours consistently as well as defining edge-case behaviours and annotating
 components. \\
 
 Building on these findings, the next section discusses the underlying causes and possible solutions
@@ -185,19 +184,19 @@ is possible to have a similar structure in both code and design.
 
 Another frequently mentioned issue was the unclear definition of responsive layouts. While design
 tools often work in a rather fixed setting, developers can easily switch their viewport to see how
-the design behaves. While grids can already be helpful for both, sometimes sizings are hard to
-interpret for developers. When setting up desktop, tablet and mobile grids, it is important to agree
-on universal breakpoints used by both groups. Furthermore, defining a number of simple page layouts
-with specified maximum and  minimum sizes for certain elements like navigation and content can be
-extremely beneficial.
-% NOTE: Maybe I can have the spacing shizzle I defined for EA: Nö leider
+the design behaves. While grids can already be helpful for both, sometimes size specifications are
+hard to interpret for developers. When setting up desktop, tablet and mobile grids, it is important
+to agree on universal breakpoints used by both groups. Furthermore, defining a number of simple page
+layouts with specified maximum and minimum sizes for certain elements like navigation and content
+can be extremely beneficial.
+
 This way, developers can implement grids more easily without guesswork and even designers benefit as
 they can take these defined layout grids as a starting point for page designs. Also, defining tablet
 and mobile versions of components directly next to each other can help the developers to quickly
 implement and quality check the design.
 
 These suggested practices also improves the consistency of repeating patterns, which was another
-problem mentioned in the survey. Design tokens like colors, fonts and spacings also fit into the
+problem mentioned in the survey. Design tokens like colours, fonts and spacings also fit into the
 same category, although they seem to be managed quite well by designers already.
 
 Lastly, time constraints seem to be the root cause to many smaller details. Tasks that are done late
@@ -205,7 +204,7 @@ in the process like documentation, definition of edge cases, empty states or foc
 when there is no time left. While teams may not be in control of the deadlines, they can change how
 they work together. As described in chapter \ref{Agile Project Management & Lean UX}, working in an
 Agile manner with smaller handoffs and much more frequent check-ins can boost the workflow. With
-smaller handoffs, it may be possible to prioritise documentation, edge cases and other details more
+smaller handoffs, it may be possible to prioritize documentation, edge cases and other details more
 consistently and earlier in the process.
 
 Lean UX further suggests that teams should create a so-called \textit{Team Working Agreement} to
